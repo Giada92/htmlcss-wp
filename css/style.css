@@ -7,27 +7,23 @@
     background-color: rgb(206, 206, 43);  
 } */
 
-main {
-    height: 500px;
-    margin-bottom: 20px;
+/* main {
     background-color: rgb(37, 37, 206);
-}
+} */
 
-.section-top { 
+/* .titolo { 
     background-color: lightblue;
-}
-.aside-sx {
+} */
+/* .section-sx {    
+    background-color: lightblue;
+} */
+/* .section-middle {    
+    background-color: lightblue;
+} */
+/* .section-dx {
     height: 400px;
     background-color: lightblue;
-}
-.section-middle {
-    height: 400px;
-    background-color: lightblue;
-}
-.aside-dx {
-    height: 400px;
-    background-color: lightblue;
-}
+} */
 
 footer {
     background-color: rgb(100, 9, 100);
@@ -43,6 +39,7 @@ footer {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
 .container {
@@ -64,6 +61,22 @@ main::after {
     color: white;
 }
 
+.bg {
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.bg-size {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+
+section > p {
+    font-size: 12px;
+}
+
 
 /* Header */
 #logo > img {
@@ -79,7 +92,7 @@ main::after {
 }
 .list-inline a {
     text-decoration: none;
-    font-size: 15px;;
+    font-size: 14px;
 }
 a:hover {
     color: black;
@@ -87,37 +100,65 @@ a:hover {
 
 .banner {
     height: 400px;
-    margin: 20px 0; 
+    margin: 20px 0 30px 0; 
     background-image: url("../img/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
 }
-.banner-testo {
-    height: 100%;
-    padding: 230px 300px 0 40px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+
+.banner-testo { 
+    padding: 240px 350px 0 40px;
+}
+.banner-testo > h2 {
+    font-weight: 400;
+}
+.banner-testo > p {
+    font-size: 14px;
 }
 
 /* Main */
-.section-top {
+main {
+    margin-bottom: 20px;
+}
+
+.titolo {
     height: 60px;
     margin-bottom: 20px;
+}
+.titolo > h1 {
+    font-size: 30px;
 }
 
 .col {
     float: left;
 }
-.aside-sx {
-    width: 25%;   
+
+.section-sx,
+.section-dx {
+    width: 25%;
 }
+
+.section-sx-img {
+    height: 200px;
+    background-image: url("../img/img-1.jpg");
+}
+
 .section-middle {
-    width: calc(50% - 20px);  
-    margin: 0 10px;  
+    width: calc(50% - 20px); 
+    margin: 0 10px;
 }
-.aside-dx {
-    width: 25%; 
+
+.section-middle-img {
+    height: 200px;
+    background-image: url("../img/banner-2.jpg");
+}
+
+.section-dx-img {
+    height: 200px;
+    background-image: url("../img/img-3.jpg");
+}
+
+h4 {
+    line-height: 40px;
+    font-weight: 400;
 }
 
 /* Footer */
