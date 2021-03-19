@@ -1,0 +1,92 @@
+/* debugger */
+nav {
+    background-color: violet;
+}
+
+.banner {
+    background-color: rgb(206, 206, 43);  
+}
+
+main {
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: rgb(37, 37, 206);
+}
+
+.section-top { 
+    background-color: lightblue;
+}
+.aside-sx {
+    height: 400px;
+    background-color: lightblue;
+}
+.section-middle {
+    height: 400px;
+    background-color: lightblue;
+}
+.aside-dx {
+    height: 400px;
+    background-color: lightblue;
+}
+
+footer {
+    background-color: rgb(100, 9, 100);
+}
+/* /debugger */
+
+/* common */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+}
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Header */
+nav {
+    height: 80px;
+}
+
+.banner {
+    height: 300px;
+    margin: 20px 0; 
+}
+
+/* Main */
+.section-top {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.col {
+    float: left;
+}
+.aside-sx {
+    width: 25%;   
+}
+.section-middle {
+    width: calc(50% - 20px);  
+    margin: 0 10px;  
+}
+.aside-dx {
+    width: 25%; 
+}
+
+/* Footer */
+footer {
+    height: 60px;  
+}
